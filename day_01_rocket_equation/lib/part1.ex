@@ -31,7 +31,7 @@ defmodule Part1 do
     File.stream!(input_file)
     |> Stream.map(&String.trim/1)
     |> Stream.map(&String.to_integer/1)
-    |> Stream.map(&Day01RocketEquation.fuel_for_mass/1)
+    |> Stream.map(&fuel_for_mass/1)
     |> Enum.sum()
   end
 end
